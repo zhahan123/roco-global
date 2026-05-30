@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Roco Kingdom: World guides — beginner tips, evolution paths, boss strategies, PVP team builds, shiny hunting, and more.">
+<title>Guides — Roco Kingdom: World Strategy Hub</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">🌍</span><span>Roco<span style="color:#fff;">Global</span></span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="guides.html" class="active">Guides</a>
+      <a href="resources.html">Resources</a>
+      <a href="pets.html">Pet Dex</a>
+      <a href="tier-list.html">Tier List</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Guides</div>
+  <h1>📖 All Guides</h1>
+  <div class="meta">Comprehensive strategies for every aspect of Roco Kingdom: World</div>
+</section>
+
+<div class="section">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" placeholder="Search guides..." id="guideSearchInput">
+      <button id="guideSearchBtn">🔍 Search</button>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="beginner">🌱 Beginner</button>
+      <button class="filter-btn" data-filter="evolution">🧬 Evolution</button>
+      <button class="filter-btn" data-filter="boss">👾 Bosses</button>
+      <button class="filter-btn" data-filter="pvp">⚔️ PVP</button>
+      <button class="filter-btn" data-filter="shiny">✨ Shiny</button>
+      <button class="filter-btn" data-filter="hidden">🔮 Hidden</button>
+      <button class="filter-btn" data-filter="team">👥 Team</button>
+      <button class="filter-btn" data-filter="event">🎪 Events</button>
+    </div>
+
+    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.88rem;" id="resultInfo">Showing <span id="resultCount">0</span> guides</p>
+    <div class="cards-grid" id="guidesGrid"></div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col"><h4>🧭 Navigation</h4><a href="index.html">Home</a><a href="guides.html">Guides</a><a href="resources.html">Resources</a><a href="pets.html">Pet Dex</a><a href="tier-list.html">Tier List</a></div>
+    <div class="footer-col"><h4>📂 Categories</h4><a href="guides.html?cat=beginner">Beginner</a><a href="guides.html?cat=evolution">Evolution</a><a href="guides.html?cat=boss">Bosses</a><a href="guides.html?cat=pvp">PVP</a></div>
+    <div class="footer-col"><h4>📞 About</h4><p>Fan-made guide site. Not affiliated with Tencent.</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 RocoGlobal — Fan Site</p></div>
+  <div class="footer-disclaimer"><p>Community guide site. All game assets and trademarks belong to Tencent / MoreFun Studios.</p></div>
+</footer>
+
+<script src="assets/js/pets-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

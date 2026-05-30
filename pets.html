@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Roco Kingdom: World complete pet database — browse all 400+ creatures by type, search by name, view stats, evolution paths, and how to obtain each pet.">
+<title>Pet Dex — Roco Kingdom: World Complete Database</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">🌍</span><span>Roco<span style="color:#fff;">Global</span></span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="pets.html" class="active">Pet Dex</a>
+      <a href="tier-list.html">Tier List</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="breadcrumb"><a href="index.html">Home</a> / Pet Dex</div>
+  <h1>🐾 Pet Database</h1>
+  <div class="meta">400+ creatures · 18 types · 1000+ evolution forms</div>
+</section>
+
+<div class="section">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" placeholder="Search pet name or number..." id="petSearchInput">
+      <button id="petSearchBtn">🔍 Search</button>
+    </div>
+
+    <div class="filter-bar" id="petFilterBar">
+      <button class="filter-btn active" data-filter="all">All Types</button>
+      <button class="filter-btn" data-filter="fire">🔥 Fire</button>
+      <button class="filter-btn" data-filter="water">💧 Water</button>
+      <button class="filter-btn" data-filter="grass">🌿 Grass</button>
+      <button class="filter-btn" data-filter="electric">⚡ Electric</button>
+      <button class="filter-btn" data-filter="ice">❄️ Ice</button>
+      <button class="filter-btn" data-filter="dragon">🐉 Dragon</button>
+      <button class="filter-btn" data-filter="dark">🌑 Dark</button>
+      <button class="filter-btn" data-filter="ghost">👻 Ghost</button>
+      <button class="filter-btn" data-filter="fairy">✨ Fairy</button>
+      <button class="filter-btn" data-filter="fighting">👊 Fighting</button>
+      <button class="filter-btn" data-filter="ground">🏔️ Ground</button>
+      <button class="filter-btn" data-filter="flying">🕊️ Flying</button>
+    </div>
+
+    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.88rem;" id="petResultInfo">Showing <span id="petResultCount">0</span> pets</p>
+    <div class="cards-grid" id="petsGrid"></div>
+    <div class="pagination" id="petPagination"></div>
+  </div>
+</div>
+
+<!-- Pet Detail Modal -->
+<div class="modal-overlay hidden" id="petModal">
+  <div class="modal-content">
+    <button class="modal-close" id="closePetModal">✕</button>
+    <div id="petModalContent"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col"><h4>🧭 Navigation</h4><a href="index.html">Home</a><a href="guides.html">Guides</a><a href="resources.html">Resources</a>
+      <a href="pets.html">Pet Dex</a><a href="tier-list.html">Tier List</a></div>
+    <div class="footer-col"><h4>📂 Categories</h4><a href="guides.html?cat=beginner">Beginner</a><a href="guides.html?cat=evolution">Evolution</a><a href="guides.html?cat=boss">Bosses</a><a href="guides.html?cat=pvp">PVP</a></div>
+    <div class="footer-col"><h4>📞 About</h4><p>Fan-made guide site. Not affiliated with Tencent.</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 RocoGlobal — Fan Site</p></div>
+  <div class="footer-disclaimer"><p>Community guide site. All game assets and trademarks belong to Tencent / MoreFun Studios.</p></div>
+</footer>
+
+<script src="assets/js/pets-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
