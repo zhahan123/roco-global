@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://zhahan123.github.io/roco-global/sitemap.xml
+Sitemap: https://rocoglobal.com.cn/sitemap.xml

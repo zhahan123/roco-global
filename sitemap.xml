@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zhahan123.github.io/roco-global/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/guides.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/pets.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/tier-list.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/resources.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/guide-detail.html?id=starter-guide</loc><priority>0.7</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/guide-detail.html?id=evolution-guide</loc><priority>0.7</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/guide-detail.html?id=shiny-guide</loc><priority>0.7</priority></url>
-  <url><loc>https://zhahan123.github.io/roco-global/guide-detail.html?id=boss-drakonbreath</loc><priority>0.7</priority></url>
+  <url><loc>https://rocoglobal.com.cn/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://rocoglobal.com.cn/guides.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rocoglobal.com.cn/pets.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rocoglobal.com.cn/tier-list.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rocoglobal.com.cn/resources.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rocoglobal.com.cn/guide-detail.html?id=starter-guide</loc><priority>0.7</priority></url>
+  <url><loc>https://rocoglobal.com.cn/guide-detail.html?id=evolution-guide</loc><priority>0.7</priority></url>
+  <url><loc>https://rocoglobal.com.cn/guide-detail.html?id=shiny-guide</loc><priority>0.7</priority></url>
+  <url><loc>https://rocoglobal.com.cn/guide-detail.html?id=boss-drakonbreath</loc><priority>0.7</priority></url>
 </urlset>
