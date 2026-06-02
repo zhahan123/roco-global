@@ -31,7 +31,8 @@
   --font: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; color-scheme: dark; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
 body {
   font-family: var(--font);
   background: var(--bg);
@@ -40,7 +41,9 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
-a { text-decoration: none; color: inherit; }
+a { color: inherit; }
+a:hover { text-decoration: underline; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 ul, ol { list-style: none; }
 img { max-width: 100%; display: block; }
 button { cursor: pointer; font-family: inherit; border: none; }
@@ -164,8 +167,8 @@ button { cursor: pointer; font-family: inherit; border: none; }
 
 /* Search Box */
 .search-box { display: flex; max-width: 480px; margin-bottom: 28px; }
-.search-box input { flex: 1; padding: 12px 20px; border: 2px solid var(--border); border-radius: 28px 0 0 28px; background: var(--bg-card); color: #fff; font-size: 0.95rem; outline: none; font-family: inherit; }
-.search-box input:focus { border-color: var(--primary); }
+.search-box input { flex: 1; padding: 12px 20px; border: 2px solid var(--border); border-radius: 28px 0 0 28px; background: var(--bg-card); color: #fff; font-size: 0.95rem; font-family: inherit; }
+.search-box input:focus { border-color: var(--primary); outline: 2px solid var(--primary); outline-offset: -1px; }
 .search-box input::placeholder { color: var(--text-muted); }
 .search-box button { padding: 12px 24px; background: var(--primary); color: #fff; border-radius: 0 28px 28px 0; font-size: 0.95rem; font-weight: 600; }
 
