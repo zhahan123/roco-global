@@ -394,7 +394,7 @@ function renderPets() {
   function renderPetCards(list) {
     grid.innerHTML = list.map(p => `
       <div class="pet-card" onclick="openPetDetail('${p.id}')">
-        <div class="pet-icon">${petIcon(p)}</div>
+        <div class="pet-icon">${p.img ? `<img src="${p.img}" alt="${p.name}" style="width:72px;height:72px;object-fit:contain;">` : petIcon(p)}</div>
         <div class="pet-no">#${p.no} · ${p.rarity}</div>
         <h3>${p.name}</h3>
         <div class="pet-types">${p.types.map(t => `<span class="type-badge type-${t}">${t}</span>`).join('')}</div>
@@ -432,7 +432,7 @@ function openPetDetail(id) {
   const total = p.hp+p.atk+p.def+p.spa+p.spd+p.sp;
   document.getElementById('petModalContent').innerHTML = `
     <div style="text-align:center;margin-bottom:20px;">
-      <span style="font-size:5rem;">${petIcon(p)}</span>
+      ${p.img ? `<img src="${p.img}" alt="${p.name}" style="width:120px;height:120px;object-fit:contain;margin:0 auto;display:block;">` : `<span style="font-size:5rem;">${petIcon(p)}</span>`}
       <h2 style="color:#fff;margin-top:8px;">${p.name} <span style="color:var(--text-muted);font-size:0.85rem;">${p.cn}</span></h2>
       <p style="color:var(--text-muted);">#${p.no} · ${p.rarity} · ${p.tier==='S'?'⭐ S-Tier':p.tier==='A'?'🌟 A-Tier':''}</p>
       <div style="margin-top:8px;">${p.types.map(t => `<span class="type-badge type-${t}">${t}</span>`).join(' ')}</div>
