@@ -258,7 +258,7 @@ function formatDate(d) { const diff = Math.floor((new Date()-new Date(d))/(86400
 
 // Pet icon fallback (type → emoji)
 const typeIcons = { fire:'🔥', water:'💧', grass:'🌿', electric:'⚡', ice:'❄️', dragon:'🐉', dark:'🌑', ghost:'👻', fairy:'✨', fighting:'👊', poison:'☠️', ground:'🏔️', flying:'🕊️', rock:'🪨', bug:'🐛', psychic:'🔮', steel:'🤖', normal:'⭐' };
-function petIcon(p) { return p.icon || typeIcons[p.types[0]] || '🐾'; }
+function petIcon(p) { if(p.img) return `<img src="${p.img}" alt="${p.name}" style="width:80px;height:80px;object-fit:contain;">`; return p.icon || typeIcons[p.types[0]] || '🐾'; }
 
 // =============================================
 // HOME PAGE
